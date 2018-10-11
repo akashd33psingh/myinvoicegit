@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".25"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_id_label"
+
+            android:id="@+id/textViewId"
+             />
+
+        <EditText
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:id="@+id/settings_id"
+            android:layout_width="0dp"
+            android:layout_weight=".75"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="@string/settings_id_hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+
+            android:paddingLeft="10dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_name_label"
+            android:id="@+id/textView"
+/>
+
+        <EditText
+            android:textColorHint="@color/black"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:id="@+id/settings_name"
+            android:layout_width="0dp"
+            android:layout_weight=".75"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:hint="@string/settings_name_hint"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_email_label"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:id="@+id/textView2"/>
+
+        <EditText
+            android:textColorHint="@color/black"
+
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:text="@string/settings_email_hint"
+            android:ems="10"
+            android:id="@+id/settings_email"
+            android:layout_weight=".75" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/settings_gender_label"
+            android:id="@+id/textView3"
+            android:labelFor="@+id/gender_list" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/trip_type"
+            android:spinnerMode="dropdown"
+            android:entries="@array/gender_list"
+            android:layout_marginRight="10dp"
+            android:prompt="@+id/gender_list"
+            android:layout_weight=".75" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight=".25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Comment"
+        />
+
+        <EditText
+            android:textColorHint="@color/black"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_weight=".75"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/settings_comments"
+            android:hint="@string/settings_comment_hint"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="1sp" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

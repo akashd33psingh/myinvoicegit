@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">MyInvoices</string>
+    <string name="action_settings">Settings</string>
+    <string name="invoice_title_hint">Title</string>
+    <string name="invoice_title_label"></string>
+    <string name="invoice_details_label">Details</string>
+    <string name="invoice_destination_hint">Destination for invoice.</string>
+    <string name="invoice_comments_hint"> Comment</string>
+    <string name="invoice_solved_label">Solved</string>
+
+    <string name="date_picker_title">Date</string>
+    <string name="new_invoice">New</string>
+    <string name="show_settings">Help</string>
+    <string name="invoice_type">invoice type</string>
+    <string name="invoice_type_label">Type</string>
+    <string name="invoice_duration_label">Shop Name</string>
+    <string name="invoice_destination_label">Invoice Type</string>
+
+    <string name="settings_id_label">ID</string>
+    <string name="settings_id_hint">Enter your ID.</string>
+    <string name="settings_name_label">Name</string>
+    <string name="settings_email_label">Email</string>
+    <string name="settings_gender_label">Gender</string>
+    <string name="settings_comment_hint">Enter your comments here.</string>
+    <string name="settings_name_hint">Enter your name.</string>
+    <string name="settings_email_hint">Enter an email.</string>
+
+    <string-array name="invoice_type_list">
+        <item>Clothes</item>
+        <item>Home</item>
+        <item>Stationary</item>
+        <item>Electronics</item>
+    </string-array>
+
+    <string-array name="gender_list">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+</resources>
